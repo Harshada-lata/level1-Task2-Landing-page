@@ -1,0 +1,370 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+/*
+font-family: 'Dancing Script', cursive;*/
+
+.nav1
+{
+    width:100%;
+    height:50px;
+    color:white;
+    background:rgb(27, 136, 175);
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.nav1 i
+{
+    margin:0 5px;
+
+}
+
+.nav1 a{
+    text-decoration:none;
+    color:white;
+    padding:5px 10px;
+    background:rgb(3, 95, 120);
+
+}
+
+
+
+.nav2
+{
+    width:100%;
+    height:80px;
+    background:white;
+    color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:82px 0px;
+    
+}
+.menu a
+{
+    text-decoration:none;
+    color:black;
+    font-size:15px bold;
+    padding: 10px 20px;
+}
+
+header{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0, 1, 0, 0),rgba(0,0,0,0.7)),url('https://engg.svpm.org.in/images/svpm_engg.JPG');
+    background-size:100% 100%;
+}
+
+.nav-links
+{
+    flex-direction:column;
+    width:100%;
+    height:100vh;
+    justify-content:center;
+}
+
+.nav-links li{
+    margin:30px auto;
+
+}
+
+.h-text
+{
+    max-width:600px;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.h-text h1{
+    font-size:1.5em;
+    color:white;
+    align-items: center;
+    
+   
+}
+
+.h-text span{
+    color:#e67e22;
+}
+
+.h-text p{
+    font-size:20px;
+    margin:40px 0;
+    Line-height:30px;
+    
+}
+
+.h-text a{
+    text-decoration:none;
+    color:white;
+    background:rgb(3, 95, 120);
+    padding:10px 20px;
+    margin:0 15px;
+    Letter-spacing:5px;
+}
+
+.container
+{
+    width:100%;
+    min-height:150vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 0.8fr 0.2fr;
+    gap:1rem;
+    grid-template-areas:"about about department department"
+                        "admission admission facility  facility "
+                        "placement placement fee fee"
+                        "contact contact footer footer";
+    padding:2rem
+    
+}
+
+.about
+{
+    background:rgb(20, 130, 185);
+    color:white;
+    padding:2rem;
+    grid-area:about;
+}
+
+.department
+{
+    background:rgb(158, 148, 148);
+    color:white;
+    padding:2rem;
+    grid-area:department;
+    
+}
+
+.admission
+{
+    background:rgb(158, 148, 148);
+    color:white;
+    padding:2rem;
+    grid-area:admission;
+}
+
+.facility
+{
+    background:rgb(20, 130, 185);
+    color:white;
+    padding:2rem;
+    grid-area:facility;
+}
+
+.placement
+{
+    background:rgb(20, 130, 185);
+    color:white;
+    padding:2rem;
+    grid-area:placement;
+}
+
+.fee
+{
+    background:rgb(158, 148, 148);
+    color:white;
+    padding:2rem;
+    grid-area:fee;
+}
+
+.contact
+{
+    background:rgb(158, 148, 148);
+    color:white;
+    padding:2rem;
+    grid-area:contact;
+}
+
+
+footer{
+    color:white;
+    background:rgb(20, 130, 185);
+    padding:2rem;
+    grid-area:footer;
+}
+/*about*/
+.about{
+    padding:1.5rem 2rem;
+    text-align:justify;
+    line-height:2.2rem;
+}
+
+.about h2{
+    margin-bottom:1rem;
+}
+.about a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:white;
+    color:rgb(20, 130, 185);
+}
+
+/*department*/
+.department{
+    padding:1.5rem 2rem;
+    text-align:justify;
+    line-height:1.4rem;
+}
+
+.department h2{
+    margin-bottom:1rem;
+    align-items:space-between;
+}
+.department a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:white;
+    color:black;
+}
+
+/*admission*/
+
+.admission{
+    padding:1.5rem 2rem;
+    text-align:justify;
+    line-height:2.2rem;
+}
+
+.admission h2{
+    margin-bottom:1rem;
+}
+.admission a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:white;
+    color:black;
+    position: relative;
+   
+    top:35px;
+    bottom:0px;
+}
+
+
+/*facility*/
+.facility{
+    padding:1.5rem 2rem;
+    text-align:justify;
+    line-height:1.4rem;
+}
+
+.facility h2{
+    margin-bottom:1rem;
+}
+.facility a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:white;
+    color:rgb(20, 130, 185);
+}
+
+/*placement*/
+
+.placement{
+    padding:1.5rem 2rem;
+    text-align:justify;
+    line-height:2.2rem;
+}
+
+.placement h2{
+    margin-bottom:1rem;
+}
+.placement a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:white;
+    color:rgb(20, 130, 185);
+}
+
+
+/*fee*/
+.fee{
+    padding:1.5rem 2rem;
+    text-align:justify;
+    line-height:2.2rem;
+}
+
+.fee h2{
+    margin-bottom:1rem;
+}
+.fee a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:white;
+    color:black;
+    position: relative;
+    top:35px;
+    bottom:0px;
+}
+    
+
+
+/*contact*/
+
+.contact{
+    padding:1.5rem 2rem;
+    text-align:justify;
+    line-height:2.2rem;
+}
+
+.contact h2{
+    margin-bottom:1rem;
+}
+.contact a{
+    text-decoration:none;
+    padding:0.5rem 0.7rem;
+    background:white;
+    color:black;
+}
+
+/*footer*/
+
+footer i{
+    background:white;
+    color:black;
+    padding:0.5rem;
+    margin:1rem 0.2rem;
+    border-radius:50%;
+    transition:0.4s;
+
+
+}
+
+footer i:hover{
+    background:#0a3d62;
+    color:white;
+    cursor:pointer;
+
+
+}
+
+footer{
+    text-align:center;
+}
+
+@media only screen and (max-width:770px){
+    .container{
+        grid-template-columns:1fr;
+        grid-template-rows:0.8fr 0.6fr 1fr 0.6fr 0.5fr 0.6fr 0.6fr 0.1fr;
+        grid-template-areas:"about"
+                            "department"
+                            "admission"
+                            "facility"
+                            "placement"
+                            "fee"
+                            "contact"
+                            "footer";
+    }
+}
+
+
